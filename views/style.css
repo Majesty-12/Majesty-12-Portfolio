@@ -555,6 +555,7 @@
         font-size: 3vh;
         margin-top: 15vh;
         text-align: center;
+        border-top: 2px solid white;
     }
 
     #footer a {
