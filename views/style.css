@@ -637,10 +637,11 @@
             width: 100vw;
             position: relative;
             /* top:1px; */
-            background-color: black;
+            background-color: rgba(0, 0, 0, 0.602);
             
-
         }
+        
+
         .contact-icons{
             background-color: white;
             border-radius: 10px;
