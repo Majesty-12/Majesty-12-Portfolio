@@ -635,7 +635,9 @@
         }
         .fornav{
             width: 100vw;
-            position: fixed;
+            position: relative;
+            /* top:1px; */
+            background-color: black;
             
 
         }
