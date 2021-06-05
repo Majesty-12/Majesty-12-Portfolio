@@ -1,0 +1,192 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    |     
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    |     
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    |     
+    title Naveen Kumar
+    style
+      include style.css
+    link(rel='stylesheet', href='style.css')
+    link(rel='icon', href='/static/nk.png')
+  // <link rel="icon" href="/static/portfolio.jpg">
+  body(onload='myfunction()')
+    #loading
+      img(src='../static/nk.png', alt='')
+    |     
+    .wrapper
+      .box
+        div
+        |             
+        div
+        |             
+        div
+        |             
+        div
+        |             
+        div
+        |             
+        div
+        |             
+        div
+        |             
+        div
+        |             
+        div
+        |             
+        div
+    |     
+    .fornav
+      nav
+        a(href='')
+          img.logo(src='../static/nk.png', alt='NK')
+        |             
+        ul
+          li
+            a(href='') Home
+          |                 
+          li
+            a(href='#about') About
+          |                 
+          li
+            a(href='#skills-heading') Skills
+          |                 
+          li
+            a(href='#projects-heading') Projects
+          |                 
+          li
+            a(href='#contact-heading') Contact
+          |                 
+          li
+            a(href='https://drive.google.com/file/d/1KtOA8G1DuV72xlhJq_uU6n4Ir7GM68ac/view', target='_naveen') Resume
+        |             
+        a.btn(href='https://motivational-quote-website.netlify.app/', target='_naveen') Get Quotes
+    |     
+    .hero
+      .head
+        .left
+          img#own(src='../static/own.jpg', alt='')
+        |             
+        .right
+          h1 Naveen Kumar
+          |                 
+          h2#demo Student | Developer | Tech Enthusiast
+      |         
+      h2#about About
+      |         
+      hr.horizontal-line
+      |         
+      .virtual-body
+        .about-section
+          .static-txt
+            | I&apos;m a
+          |                 
+          .dynamic-txts
+            ul
+              li
+                span  Student
+              |                         
+              li
+                span  &nbsp;&nbsp;Developer
+              |                         
+              li
+                span &nbsp; YouTuber
+      |         
+      |         
+      h2#skills-heading Skills
+      |         
+      hr.horizontal-line
+      |         
+      #skills-head
+        .skills
+          .skills-box
+            img(src='../static/nodejs.png', alt='')
+          |                 
+          .skills-box
+            img(src='../static/django.png', alt='')
+          |                 
+          .skills-box
+            img(src='../static/java.png', alt='')
+          |                 
+          .skills-box
+            img(src='../static/mongodb.png', alt='')
+          |                 
+          .skills-box
+            img(src='../static/mysql.jpeg', alt='')
+            | L
+          |                 
+          .skills-box
+            img(src='../static/python.jpeg', alt='')
+          |                 
+          .skills-box
+            img(src='../static/js.jpeg', alt='')
+          |                 
+          .skills-box
+            img(src='../static/reactjs.png', alt='')
+          |                 
+          .skills-box
+            img(src='../static/angular.png', alt='')
+      |         
+      h2#projects-heading Projects
+      |         
+      hr.horizontal-line
+      |         
+      #skills-head
+        .skills
+          .skills-box
+            a(href='http://weather-app-by-naveen-kumar.herokuapp.com/', target='_naveen')
+              img(src='../static/weather.jpg', alt='')
+          |                 
+          .skills-box
+            a(href='https://naveen-dance-academy.herokuapp.com/', target='_naveen')
+              img(src='../static/dance.jpg', alt='')
+          |                 
+          .skills-box
+            a(href='https://motivational-quote-website.netlify.app/', target='_naveen')
+              img(src='../static/Motivation-Quotes.jpg', alt='')
+          |                 
+          .skills-box
+            a(href='')
+              img(src='../static/portfolio.jpg', alt='')
+      |         
+      h2#contact-heading Contact
+      |         
+      hr.horizontal-line
+      |         
+      .contact-icons
+        a(href='https://github.com/Majesty-12', target='_naveen')
+          img(src='../static/github.png', alt='')
+        |             
+        a(href='https://www.linkedin.com/in/naveen-kumar-15aba3203/', target='_naveen')
+          img(src='../static/linkedin.png', alt='')
+        |             
+        a(href='https://www.youtube.com/channel/UC3PlHP5j9erBv9ZWumA7KEQ', target='_naveen')
+          img(src='../static/youtube.png', alt='')
+        |             
+        a(href='https://www.instagram.com/mad_eagle_official/', target='_naveen')
+          img(src='../static/instagram.png', alt='')
+    |     
+    .foot-class
+      footer#footer
+        a(href='https://github.com/Majesty-12', target='_naveen')
+          | Copyright &copy; 2021-2022
+          | | All Rights Reserved
+    |     
+    script.
+      var preloader = document.getElementById('loading');
+      function myfunction() {
+      preloader.style.display = 'none';
+      }
+      var i = 0;
+      var txt = 'Lorem ipsum typing effect!'; /* The text */
+      var speed = 50; /* The speed/duration of the effect in milliseconds */
+      function typeWriter() {
+      if (i < txt.length) {
+      document.getElementById("demo").innerHTML += txt.charAt(i);
+      i++;
+      setTimeout(typeWriter, speed);
+      }
+      }

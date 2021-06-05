@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naveen Kumar</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="/static/nk.png">
+<!-- <link rel="icon" href="/static/portfolio.jpg"> -->
+
+
+<body onload="myfunction()">
+    <div id="loading">
+        <img src="../static/nk.png" alt="">
+    </div>
+
+
+    <div class="wrapper">
+        <div class="box">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <div class="fornav">
+        <nav>
+            <a href=""><img src="../static/nk.png" alt="NK" class="logo"></a>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills-heading">Skills</a></li>
+                <li><a href="#projects-heading">Projects</a></li>
+                <li><a href="#contact-heading">Contact</a></li>
+                <li><a href='https://drive.google.com/file/d/1KtOA8G1DuV72xlhJq_uU6n4Ir7GM68ac/view' target="_naveen">Resume</a></li>
+            </ul>
+            <a href="https://motivational-quote-website.netlify.app/" target="_naveen" class="btn">Get Quotes</a>
+        </nav>
+    </div>
+    <div class="hero">
+        <div class="head">
+            <div class="left">
+                <img id='own' src="../static/own.jpg" alt="">
+            </div>
+            <div class="right">
+                <h1>Naveen Kumar</h1>
+                <h2 id='demo'>Student | Developer | Tech Enthusiast</h2>
+
+
+            </div>
+        </div>
+        <h2 id="about">About</h2>
+        <hr class="horizontal-line">
+        <div class="virtual-body">
+
+
+            <div class="about-section">
+                <div class="static-txt">
+                    I'm a
+                </div>
+                <div class="dynamic-txts">
+                    <ul>
+                        <li><span> Student</span></li>
+                        <li><span> &nbsp;&nbsp;Developer</span></li>
+                        <li><span>&nbsp; YouTuber</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        
+
+
+
+        <h2 id="skills-heading">Skills</h2>
+        <hr class="horizontal-line">
+        <div id="skills-head">
+            <div class="skills">
+                <div class="skills-box"><img src="../static/nodejs.png" alt=""></div>
+                <div class="skills-box"><img src="../static/django.png" alt=""></div>
+                <div class="skills-box"><img src="../static/java.png" alt=""></div>
+                <div class="skills-box"><img src="../static/mongodb.png" alt=""></div>
+                <div class="skills-box"><img src="../static/mysql.jpeg" alt="">L</div>
+                <div class="skills-box"><img src="../static/python.jpeg" alt=""></div>
+                <div class="skills-box"><img src="../static/js.jpeg" alt=""></div>
+                <div class="skills-box"><img src="../static/reactjs.png" alt=""></div>
+                <div class="skills-box"><img src="../static/angular.png" alt=""></div>
+            </div>
+        </div>
+        <h2 id="projects-heading">Projects</h2>
+        <hr class="horizontal-line">
+        <div id="skills-head">
+            <div class="skills">
+                <div class="skills-box"><a href="http://weather-app-by-naveen-kumar.herokuapp.com/"
+                        target="_naveen"><img src="../static/weather.jpg" alt=""></a></div>
+                <div class="skills-box"><a href="https://naveen-dance-academy.herokuapp.com/" target="_naveen"><img
+                            src="../static/dance.jpg" alt=""></a></div>
+                <div class="skills-box"><a href="https://motivational-quote-website.netlify.app/" target="_naveen"><img
+                            src="../static/Motivation-Quotes.jpg" alt=""></a></div>
+                <div class="skills-box"><a href=""><img src="../static/portfolio.jpg" alt=""></a></div>
+
+            </div>
+        </div>
+        <h2 id="contact-heading">Contact</h2>
+        <hr class="horizontal-line">
+        <div class="contact-icons">
+            <a href="https://github.com/Majesty-12" target="_naveen"><img src="../static/github.png" alt=""></a>
+            <a href="https://www.linkedin.com/in/naveen-kumar-15aba3203/" target="_naveen"><img
+                    src="../static/linkedin.png" alt=""></a>
+            <a href="https://www.youtube.com/channel/UC3PlHP5j9erBv9ZWumA7KEQ" target="_naveen"><img
+                    src="../static/youtube.png" alt=""></a>
+            <a href="https://www.instagram.com/mad_eagle_official/" target="_naveen"><img src="../static/instagram.png"
+                    alt=""></a>
+        </div>
+
+    </div>
+
+    <div class="foot-class">
+    <footer id="footer">
+        <a href="https://github.com/Majesty-12" target="_naveen">Copyright © 2021-2022
+            | All Rights Reserved</a>
+
+    </footer>
+    </div>
+
+
+
+
+
+
+    <script>
+        var preloader = document.getElementById('loading');
+
+        function myfunction() {
+            preloader.style.display = 'none';
+        }
+
+
+        var i = 0;
+        var txt = 'Lorem ipsum typing effect!'; /* The text */
+        var speed = 50; /* The speed/duration of the effect in milliseconds */
+
+        function typeWriter() {
+            if (i < txt.length) {
+                document.getElementById("demo").innerHTML += txt.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+            }
+        }
+    </script>
+</body>
+
+</html>
